@@ -94,7 +94,7 @@
 
   startQuizButton.addEventListener('click', function () {
     const quizType = document.getElementById('quiz-type').value;
-    fetch(`https://novaintern-quizapp.vercel.app/api/quiz/${quiztype}`)
+    fetch(`https://novaintern-quizapp.vercel.app/api/quiz/${quizType}`)
       .then(response => response.json())
       .then(data => {
         quiz = shuffleArray(data); // Shuffle the questions array
